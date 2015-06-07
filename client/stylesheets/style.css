@@ -1,4 +1,4 @@
-.grid-block, .main, .post, .comments li, .comment-form {
+.grid-block, .main, .petition, .comments li, .comment-form {
   background: #fff;
   border-radius: 3px;
   padding: 10px;
@@ -34,62 +34,62 @@ body {
   height: 300px;
 }
 
-.post {
+.petition {
   /* For modern browsers */
   /* For IE 6/7 (trigger hasLayout) */
   *zoom: 1;
   position: relative;
   opacity: 1;
 }
-.post:before, .post:after {
+.petition:before, .petition:after {
   content: "";
   display: table;
 }
-.post:after {
+.petition:after {
   clear: both;
 }
-.post.invisible {
+.petition.invisible {
   opacity: 0;
 }
-.post.instant {
+.petition.instant {
   -webkit-transition: none;
   -moz-transition: none;
   -o-transition: none;
   transition: none;
 }
-.post.animate{
+.petition.animate{
   -webkit-transition: all 300ms 0ms;
   -moz-transition: all 300ms 0ms ease-in;
   -o-transition: all 300ms 0ms ease-in;
   transition: all 300ms 0ms ease-in;
 }
-.post .upvote {
+.petition .upvote {
   display: block;
   margin: 7px 12px 0 0;
   float: left;
 }
-.post .post-content {
+.petition .petition-content {
   float: left;
 }
-.post .post-content h3 {
+.petition .petition-content h3 {
   margin: 0;
   line-height: 1.4;
   font-size: 18px;
 }
-.post .post-content h3 a {
+.petition .petition-content h3 a {
   display: inline-block;
   margin-right: 5px;
 }
-.post .post-content h3 span {
+.petition .petition-content h3 span {
   font-weight: normal;
   font-size: 14px;
   display: inline-block;
   color: #aaaaaa;
 }
-.post .post-content p {
+.petition .petition-content p {
   margin: 0;
 }
-.post .discuss {
+.petition .discuss {
   display: block;
   float: right;
   margin-top: 7px;
@@ -136,7 +136,7 @@ body {
   background: rgba(0, 0, 0, 0.1);
 }
 
-.posts .spinner-container{
+.petitions .spinner-container{
   position: relative;
   height: 100px;
 }
