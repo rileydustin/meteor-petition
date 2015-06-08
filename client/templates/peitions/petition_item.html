@@ -1,7 +1,11 @@
 <template name="petitionItem">
   <div class="petition">
     <div class="petition-content">
-      <h3><a href="{{pathFor 'petitionPage'}}">{{title}}</a><span>{{username}}</span></h3>
+      <h3><a href="{{pathFor 'petitionPage'}}">{{title}}</a><span>{{description}}</span></h3>
+      <p>
+        submitted by {{username}}
+        {{#if ownPetition}}<a href="{{pathFor 'petitionEdit'}}">Edit</a>{{/if}}
+      </p>
     </div>
   </div>
 </template>

@@ -1,3 +1,3 @@
 Template.petitionsList.helpers
   petitions: ->
-    Petitions.find()
+    Petitions.find {}, {sort: {submitted: -1}}
